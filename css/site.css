@@ -1,0 +1,37 @@
+.p-l-8{
+    padding-left: 8px;
+}
+
+.pie-container{
+    border: 1px solid;
+    padding: 16px;
+}
+
+.help-text, .xs-header{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .pie-container{
+        display: none;
+    }
+    .help-text, .xs-header{
+        display: block;
+    }
+    .xs-header {
+        background: #546E7A;
+        color: #fff;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .pie-container{
+        display: block;
+    }
+    .help-text{
+        display: none;
+    }
+}
